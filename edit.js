@@ -1603,7 +1603,7 @@ function hpp_preview (e, t) {
   'none' != document.getElementById (`text_${e}`).style.display
     ? ((document.getElementById (`div_${e}`).style.display =
         'block'), (document.getElementById (`text_${e}`).style.display =
-        'none'), (document.getElementById (`hpp_eye_${e}`).innerHTML =
+        'block'), (document.getElementById (`hpp_eye_${e}`).innerHTML =
         '<i class="fa fa-eye-slash fa-2x"></i>'), (document.getElementById (
         `div_${e}`
       ).innerHTML =
