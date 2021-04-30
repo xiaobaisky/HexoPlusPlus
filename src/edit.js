@@ -33,8 +33,8 @@ document.getElementById(ele).innerHTML=`
     <button onclick="$('#input').click();" class="btn btn-primary"><i class="fa fa-photo fa-2x"><\/i><\/button>
     <button onclick="$('#upload_md').click();" class="btn btn-primary"><i class="fa fa-file fa-2x"><\/i><\/button>
     <button onclick="hpp_preview('${ele}','${data_name}')" id="hpp_eye_${ele}" class="btn btn-primary"><i class="fa fa-eye fa-2x"><\/i><\/button>
-    <button type="submit" class="btn btn-primary pull-right" onclick="javascript:hpp_upload_md()"><i class="fa fa-external-link fa-2x"><\/i></button>
-	
+    <button type="submit" class="btn btn-primary" onclick="javascript:hpp_upload_md()"><i class="fa fa-cloud-upload fa-2x"><\/i></button>
+    <button type="submit" class="btn btn-primary" onclick="javascript:hpp_upload_draft()"><i class="fa fa-bullhorn fa-2x"><\/i></button>	
 <\/div>   
 <textarea style="border:0;border-radius:5px;background-color:#90939920;width: 100%;min-height: 400px;padding: 10px;resize: none;display:block" id="text_${ele}"><\/textarea><div style="border:0;border-radius:5px;background-color:#90939920;max-width: 100%;min-height: 70%;padding: 10px;resize: none;display: none;" id="div_${ele}" class="hpp_pre_div"><\/div><div class="OwO"><\/div>`
 document.getElementById(`text_${ele}`).value=localStorage.getItem(`hpp_${data_name}_backup`)
